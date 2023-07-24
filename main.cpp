@@ -1,6 +1,7 @@
 #include <iostream>
 #include <opencv4/opencv2/opencv.hpp>
 
+
 // Replace these ASCII characters based on intensity or color.
 const std::string ASCII_CHARS = "@%#*+=-:. ";
 
