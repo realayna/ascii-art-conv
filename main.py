@@ -34,12 +34,11 @@ def main(image_path, new_width=100):
     image = grayify(image)
     ascii_str = pixel_to_ascii(image)
 
-    # Print the ASCII art
     width = image.width
     ascii_str_len = len(ascii_str)
     ascii_img = "\n".join(ascii_str[i:i+width] for i in range(0, ascii_str_len, width))
     print(ascii_img)
 
 if __name__ == "__main__":
-    image_path = "stewie.png"  # Replace with the path to your JPG image
+    image_path = "stewie.png"  
     main(image_path, 50)
